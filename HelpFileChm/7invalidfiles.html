@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>7. Managing invalid files</title>
+	<link rel="stylesheet" type="text/css" href="rsrc/style.css">
+</head>
+<body>
+
+<!-- Titre -->
+<table width="100%" border="1" cellspacing="0">
+  <tr> 
+    <td class="header">7. Managing invalid files</td>
+  </tr>
+</table>
+
+<!-- Le texte commence ici -->
+<p>This program can easilly manage invalid Visual Memory datas. For example, missing VMI files. At this point,
+it can repair this kind of errors, but maybe in the future, repair corrupted datas...<br><br><em>Example :</em></p>
+
+<div align="center"><img src="screens/invalidfiles/errornousfiles.png"></img></div>
+
+<p class="title">1) Managing invalid VMI</p>
+
+<p>If you have autorized the display of errornous VMI files (see <a href="2config.html#view">config section</a>), you should
+see theses files in the view :</p>
+
+<div align="center"><img src="screens/invalidfiles/errvmi.png"></img></div>
+
+<p>At this point, nothing can be done with invalid VMI files. In fact, VMI files are only VMS header files.
+For exemple, as header (.h) files for source files (.c). You can check the debug tab to see what kind of error
+it is.</p>
+
+<p class="title">2) Managing invalid VMS</p>
+
+<p>Invalid VMS files are only displayed if you have checked the option in the <a href="2config.html#view">config section</a>.
+Theses files seems to be valid, but are not read because no VMI associated file was found. Example :</p>
+
+<div align="center"><img src="screens/invalidfiles/errvms.png"></img></div>
+
+<p>To solve this problem, right click on the errornous VMS :</p>
+
+<div align="center"><img src="screens/invalidfiles/vmicreate.png"></img></div>
+
+<p>A new dialog is shown :</p>
+
+<div align="center"><img src="screens/invalidfiles/newvmi.png"></img></div>
+
+<p>You can put the mouse cursor on a control to see a little description hint.</p>
+
+<p>At this point, you can change the <span class="menus">Description</span>, <span class="menus">Copyright</span> fields if you want.
+Please note that field, <span class="menus">DC Filename</span>, is <span class="warning">required</span>. 
+<span class="menus">DC Filename</span>'s the name of the file when it transfered to the Dreamcast.
+<em>Example :</em> <strong>SONICADV_INT</strong> for <strong>Sonic Adventure 1</strong>. 
+<span class="warning">This field must be filled carefully. If not, the file won't be recognized on the Dreamcast</span>
+<img src="images/smilies/smile_cry.gif"></img>.</p>
+
+<p>Click <span class="menus">Create...</span> button to save the new VMI file. <span class="warning">The VMI file must be in the same directory of the VMS</span>.</p>
+
+<p>The view should be refreshed. That's all ! You done.</p>
+
+<!-- Fin du fichier -->
+<p class="conclusion">VMU TOOL PC, a powerful tool to continue the dream ! <img src="images/smilies/smile_shades.gif"></img></p>
+<hr>
+<div align="center" class="footer">2002-2006 VMU TOOL PC &copy;reated by <a href="http://sbibuilder.shorturl.com/" target="_blank">[big_fury]SiZiOUS</a> 
+	- VMU TOOL PC Engine created by <a href="http://blueswirl.shorturl.com/" target="_blank">Speud</a> 
+	- Help written by <a href="http://sbibuilder.shorturl.com/" target="_blank">[big_fury]SiZiOUS</a> 
+	- <a href="http://dctop.free.fr/in.php?id=57" target="_blank">La communaut&eacute; fran&ccedil;aise de la Dreamcast</a>
+</div>
+</body>
+</html>

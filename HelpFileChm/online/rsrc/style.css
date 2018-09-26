@@ -1,0 +1,76 @@
+body {
+	font-family: Arial;
+	font-size: 12px;
+	margin-left: 0px;
+	padding-left: 0px;
+	background-image: url('bkgnd.jpg');
+}
+
+li {
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-bottom: 8px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 5px;
+}
+
+#contentchapters {
+	padding-left: 50px;
+}
+
+#contentchapters li {
+	margin-bottom: 0px;
+	list-style-image: url('file.gif');
+}
+
+/* Lien pour les chapitres */
+a:link {	
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+a:active {
+	color: red;
+	text-decoration: none;
+}
+
+/* Lien pour les en-têtes */
+a.fold {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.fold:link {
+	color: black;
+	text-decoration: none;
+}
+
+a.fold:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a.fold:hover {
+	color: red;
+	text-decoration: none;
+}
+
+a.fold:active {
+	color: red;
+	text-decoration: none;
+}
+

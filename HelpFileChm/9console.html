@@ -1,0 +1,116 @@
+<html>
+<head>
+	<title>9. Console application</title>
+	<link rel="stylesheet" type="text/css" href="rsrc/style.css">
+</head>
+<body>
+
+<!-- Titre -->
+<table width="100%" border="1" cellspacing="0">
+  <tr> 
+    <td class="header">9. Console application</td>
+  </tr>
+</table>
+
+<!-- Le texte commence ici -->
+<p>If you need it, you can launch the engine directly from the command line. Just add to your <strong>PATH</strong>
+environment variable the <strong>VMU TOOL PC</strong> path.</p>
+
+<div align="center"><img src="screens/console/console.png"></img></div>
+
+<p><strong>VMU Tool PC by Speud</strong> - <a href="http://blueswirl.shorturl.com/" target="_blank">http://blueswirl.shorturl.com</a>
+<br><br>
+<em>vmutool_pc</em> <path> {-dirs,-files,-infos,-checksum,-description,-copyright,-date,-resource,-name,-type,-copy,-size,-vmdesc,-dcdesc,-appname,-frames,-speed,-eyec_t,-crc,-datalen,-palette,-monoicon,-frame1,-frame2,-frame3,-eyec_pal,-eyec_bitmap,-bmpmonoicon,-bmpframe1,-bmpframe2,-bmpframe3,-bmpeyecatch,-w_check <check>,-w_desc <desc>,-w_cpyrgt <cpyrgt>,-w_date <date>,-w_rsrc <rsrc>,-w_name <name>,-w_type <type>,-w_copy <copy>,-w_sz <size>,-w_vmdesc <vmdesc>,-w_dcdesc <dcdesc>,-w_app <app>,-w_frms <frms>,-w_spd <spd>,-w_eyec_t <eyec_t>,-w_crc <crc>,-w_datalen <datalen>,-w_pal <pal>,-w_monoicon <monoicon>,-w_frm1 <frm1>,-w_frm2 <frm2>,-w_frm3 <frm3>,-w_eyec_pal <eyec_pal>,-w_eyec_bitmap <eyec_bitmap>,-w_bmpmonoicon <bmpmonoicon>,-w_bmpfrm1 <bmpfrm1>,-w_bmpfrm2 <bmpfrm2>,-w_bmpfrm3 <bmpfrm3>,-w_bmpeyec <bmpeyec>,} [-o <outpath>]
+<br><br>
+<path>: path of the directory/file.
+<br><br>
+Use one of the following arguments with <path>:
+<br><br>
+<span class="title"><u>*** Files and dirs scanning:</u></span><br>
+	<span class="desc">-dirs:</span> display the list of directories found by scanning directory <path>.<br>
+	<span class="desc">-files:</span> display the list of files found by scanning directory <path>.<br>
+<br><br>
+<span class="title"><u>*** Display VMI and VMS infos:</u></span><br>
+	<span class="desc">-infos:</span> display the main infos from VMI file <path>.<br>
+<br><br>
+<span class="title"><u>*** Display VMI infos:</u></span><br>
+	<span class="desc">-checksum:</span> display the checksum from VMI file <path>.<br>
+	<span class="desc">-description:</span> display the description from VMI file <path>.<br>
+	<span class="desc">-copyright:</span> display the copyright from VMI file <path>'.<br>
+	<span class="desc">-date:</span> display the creation date from VMI file <path>.<br>
+	<span class="desc">-resource:</span> display the VMS resource name from VMI file <path>.<br>
+	<span class="desc">-name:</span> display the VM filename from VMI file <path>.<br>
+	<span class="desc">-type:</span> display the type from VMI file <path>.<br>
+	<span class="desc">-copy:</span> display the copy protection from VMI file <path>.<br>
+	<span class="desc">-size:</span> display the VMS file size in bytes from VMI file <path>.<br>
+<br><br>
+<span class="title"><u>*** Display VMS infos:</u></span><br>
+	<span class="desc">-vmdesc:</span> display the VM description from VMS file <path>.<br>
+	<span class="desc">-dcdesc:</span> display the DC description from VMS file <path>.<br>
+	<span class="desc">-appname:</span> display the application name from VMS file <path>.<br>
+	<span class="desc">-frames:</span> display the number of frames of color icon from VMS file <path>.<br>
+	<span class="desc">-speed:</span> display the animation speed of color icon from VMS file <path>.<br>
+	<span class="desc">-eyec_t:</span> display the type of eyecatch from VMS file <path>.<br>
+	<span class="desc">-crc:</span> display the CRC from VMS file <path>.<br>
+	<span class="desc">-datalen:</span> display the data length from VMS file <path>.<br>
+	<span class="desc">-palette:</span> display the color icon palette from VMS file <path>.<br>
+	<span class="desc">-monoicon:</span> display the monochrome icon from VMS file <path>.<br>
+	<span class="desc">-frame1:</span> display the 1st frame of color icon from VMS file <path>.<br>
+	<span class="desc">-frame2:</span> display the 2nd frame of color icon from VMS file <path>.<br>
+	<span class="desc">-frame3:</span> display the 3rd frame of color icon from VMS file <path>.<br>
+	<span class="desc">-eyec_pal:</span> display the eyecatch palette from VMS file <path>.<br>
+	<span class="desc">-eyec_bitmap:</span> display the eyecatch bitmap from VMS file <path>.<br>
+<br><br>
+<span class="title"><u>*** Display VMS icons and eyecatch in BMP:</u></span><br>
+	<span class="desc">-bmpmonoicon:</span> display the monochrome icon from VMS file <path> in BMP format.<br>
+	<span class="desc">-bmpframe1:</span> display the 1st frame of color icon from VMS file <path> in BMP format.<br>
+	<span class="desc">-bmpframe2:</span> display the 2nd frame of color icon from VMS file <path> in BMP format.<br>
+	<span class="desc">-bmpframe3:</span> display the 3rd frame of color icon from VMS file <path> in BMP format.<br>
+	<span class="desc">-bmpeyecatch:</span> display the eyecatch from VMS file <path> in BMP format.<br>
+<br><br>
+<span class="title"><u>*** Write VMI infos:</u></span><br>
+	<span class="desc">-w_check <check>:</span> write the checksum <check> in VMI file <path>.<br>
+	<span class="desc">-w_desc <desc>:</span> write the description <desc> in VMI file <path>.<br>
+	<span class="desc">-w_cpyrgt <cpyrgt>:</span> write the copyright <cpyrgt> in VMI file <path>'.<br>
+	<span class="desc">-w_date <date>:</span> write the creation date <date> in VMI file <path>.<br>
+	<span class="desc">-w_rsrc <rsrc>:</span> write the VMS resource name <rsrc> in VMI file <path>.<br>
+	<span class="desc">-w_name <name>:</span> write the VM filename <name> in VMI file <path>.<br>
+	<span class="desc">-w_type <type>:</span> write the type <type> of VMI file <path>.<br>
+	<span class="desc">-w_copy <copy>:</span> write the copy protection <copy> in VMI file <path>.<br>
+	<span class="desc">-w_size <size>:</span> write the VMS file size in bytes <size> in VMI file <path>.<br>
+<br><br>
+<span class="title"><u>*** Write VMS infos:</u></span><br>
+	<span class="desc">-w_vmdesc <vmdesc>:</span> write the VM description <vmdesc> in VMS file <path>.<br>
+	<span class="desc">-w_dcdesc <dcdesc>:</span> write the DC description <dcdesc> in VMS file <path>.<br>
+	<span class="desc">-w_app <app>:</span> write the application name <app> in VMS file <path>.<br>
+	<span class="desc">-w_frms <frms>:</span> write the number of color icon frames <frms> in VMS file <path>.<br>
+	<span class="desc">-w_spd <spd>:</span> write the animation speed of color icon <spd> in VMS file <path>.<br>
+	<span class="desc">-w_eyec_t <eyec_t>:</span> write the eyecatch type <eyec_t> in VMS file <path>.<br>
+	<span class="desc">-w_crc <crc>:</span> write the CRC <crc> in VMS file <path>.<br>
+	<span class="desc">-w_datalen <datalen>:</span> write the data length <datalen> in VMS file <path>.<br>
+	<span class="desc">-w_pal <pal>:</span> write the color icon palette <pal> in VMS file <path>.<br>
+	<span class="desc">-w_monoicon <monoicon>:</span> write the monochrome icon <monoicon> in VMS file <path>.<br>
+	<span class="desc">-w_frm1 <frm1>:</span> write the 1st frame of color icon <frm1> in VMS file <path>.<br>
+	<span class="desc">-w_frm2 <frm2>:</span> write the 2nd frame of color icon <frm1> in VMS file <path>.<br>
+	<span class="desc">-w_frm3 <frm3>:</span> write the 3rd frame of color icon <frm1> in VMS file <path>.<br>
+	<span class="desc">-w_eyec_pal <eyec_pal>:</span> write the eyecatch palette <eyec_pal> in VMS file <path>.<br>
+	<span class="desc">-w_eyec_bitmap <eyec_bitmap>:</span> write the eyecatch bitmap <eyec_bitmap> in VMS file <path>.<br>
+<br><br>
+<span class="title"><u>*** Write VMS icons and eyecatch from BMP:</u></span><br>
+	<span class="desc">-w_bmpmonoicon <bmpmonoicon>:</span> write the monochrome icon in VMS file <path> from BMP data <bmpmonoicon>.<br>
+	<span class="desc">-w_bmpfrm1 <bmpfrm1>:</span> write the 1st frame of color icon in VMS file <path> from BMP data <vmpfrm1>.<br>
+	<span class="desc">-w_bmpfrm2 <bmpfrm2>:</span> write the 2nd frame of color icon in VMS file <path> from BMP data <vmpfrm2>.<br>
+	<span class="desc">-w_bmpfrm3 <bmpfrm3>:</span> write the 3rd frame of color icon in VMS file <path> from BMP data <vmpfrm3>.<br>
+	<span class="desc">-w_bmpeyec <bmpeyec>:</span> write the eyecatch in VMS file <path> from BMP data <bmpeyec>.<br>
+<br><br>
+[-o <outpath>]: optionnal argument to save the output to file <outpath> without CRLF conversion issues.</p>
+
+<!-- Fin du fichier -->
+<hr>
+<div align="center" class="footer">2002-2006 VMU TOOL PC &copy;reated by <a href="http://sbibuilder.shorturl.com/" target="_blank">[big_fury]SiZiOUS</a> 
+	- VMU TOOL PC Engine created by <a href="http://blueswirl.shorturl.com/" target="_blank">Speud</a> 
+	- Help written by <a href="http://sbibuilder.shorturl.com/" target="_blank">[big_fury]SiZiOUS</a> 
+	- <a href="http://dctop.free.fr/in.php?id=57" target="_blank">La communaut&eacute; fran&ccedil;aise de la Dreamcast</a>
+</div>
+</body>
+</html>

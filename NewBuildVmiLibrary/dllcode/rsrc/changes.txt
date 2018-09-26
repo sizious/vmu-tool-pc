@@ -1,0 +1,10 @@
+BUILDVMI.DLL Changes List
+
+1.1 : Fixed :
+      - When it created the VMI files, it put spaces where there should be NULL (Thx Smurph)
+      - It also didn't properly calculate checksums (Thx Smurph)
+      
+      Thanks to Speud for correct source code.
+      Referer : http://www.dcemulation.com/phpBB/viewtopic.php?t=82329
+
+1.0 : First release

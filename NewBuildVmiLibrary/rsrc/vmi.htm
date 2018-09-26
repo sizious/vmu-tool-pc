@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html><head><title>Dreamcast Programming - VMI files</title></head>
+
+
+
+<body alink="red" bgcolor="black" link="#6699cc" text="white" vlink="#6677cc">
+<top>
+
+<img alt="" src="vmi_fichiers/dc_mark.gif" align="right">
+
+</top><p><img alt="VMI files" valign="top" src="vmi_fichiers/91kzaznr8th9aosk.gif" border="0" height="41" width="125"></p>
+
+
+A VMI file is used when a VMS file (either game or data) is to be retrieved
+from a web server.  The VMI file contains extra information about the file
+(such as creation date) and names the resource on the web server that
+contains the actual VMS file.
+<br clear="right">
+
+
+<p>
+
+A VMI file is 108 bytes in size, and organized as follows:
+
+
+<table bgcolor="#808020" border="0" cellpadding="1" cellspacing="0">
+
+<tbody><tr>
+
+<td>
+<table border="0" cellpadding="3" cellspacing="2">
+
+<tbody><tr>
+<th bgcolor="#404000">Offset</th><th bgcolor="#404000">Size (bytes)</th><th bgcolor="#404000">Datatype</th><th bgcolor="#404000">Contents</th>
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">00</td>
+
+<td bgcolor="#404000">4</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">Checksum</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">04</td>
+
+<td bgcolor="#404000">32</td>
+
+<td bgcolor="#404000">Text</td>
+
+<td bgcolor="#404000">Description</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">24</td>
+
+<td bgcolor="#404000">32</td>
+
+<td bgcolor="#404000">Text</td>
+
+<td bgcolor="#404000">Copyright</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">44</td>
+
+<td bgcolor="#404000">2</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">Creation year</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">46</td>
+
+<td bgcolor="#404000">1</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">Creation month (1-12)</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">47</td>
+
+<td bgcolor="#404000">1</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">Creation day (1-31)</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">48</td>
+
+<td bgcolor="#404000">1</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">Creation hour (0-23)</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">49</td>
+
+<td bgcolor="#404000">1</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">Creation minute (0-59)</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">4A</td>
+
+<td bgcolor="#404000">1</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">Creation second (0-59)</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">4B</td>
+
+<td bgcolor="#404000">1</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">Creation weekday (0=sunday-6=saturday)</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">4C</td>
+
+<td bgcolor="#404000">2</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">VMI version (set to 0)</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">4E</td>
+
+<td bgcolor="#404000">2</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">File number (set to 1)</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">50</td>
+
+<td bgcolor="#404000">8</td>
+
+<td bgcolor="#404000">Text</td>
+
+<td bgcolor="#404000">.VMS resource name (without the .VMS)</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">58</td>
+
+<td bgcolor="#404000">12</td>
+
+<td bgcolor="#404000">Text</td>
+
+<td bgcolor="#404000">Filename (on the VMS)</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">64</td>
+
+<td bgcolor="#404000">2</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">File mode bitfield<br>
+
+<table bgcolor="#808020" border="0" cellpadding="1" cellspacing="0">
+
+<tbody><tr>
+
+<td>
+<table border="0" cellpadding="3" cellspacing="2">
+
+<tbody><tr>
+<th bgcolor="#404000">15 .. 2</th><th bgcolor="#404000">1</th><th bgcolor="#404000">0</th>
+</tr>
+
+<tr>
+
+<td bgcolor="#404000"><i>not used</i></td>
+
+<td bgcolor="#404000">GAME (1=game, 0=data)</td>
+
+<td bgcolor="#404000">PROTECT (1=copy protected, 0=copy ok)</td>
+
+</tr>
+
+</tbody></table>
+</td>
+
+</tr>
+
+</tbody></table>
+</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">66</td>
+
+<td bgcolor="#404000">2</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">? (set to 0)</td>
+
+</tr>
+
+<tr>
+
+<td bgcolor="#404000">68</td>
+
+<td bgcolor="#404000">4</td>
+
+<td bgcolor="#404000">Integer</td>
+
+<td bgcolor="#404000">File size in bytes</td>
+
+</tr>
+
+</tbody></table>
+</td>
+
+</tr>
+
+</tbody></table>
+
+
+Integer fields are stored as little endian binary numbers.  Text fields are
+padded with nul bytes at the end to the indicated length.  Japanese systems
+store Shift-JIS in these fields, whereas western systems use ISO-8859-1
+(presumably).</p>
+
+
+
+<p>The checksum is formed by anding the first four bytes of the ".VMS
+resource name" field (offset $50) with the numbers $53, $45, $47, $41 ("SEGA")
+respectively.</p>
+
+
+
+<p>(Thanks to <a href="mailto:peace@donut.dhs.org">Loren Peace</a> of
+<a href="http://www.booyaka.com/">booyaka.com</a> for filling out a few
+blanks.)</p>
+
+
+
+<hr>
+<a href="http://www.roxen.com/"><img alt="Powered by Roxen" src="vmi_fichiers/internal-roxen-power-small-white.gif" align="right" border="0" height="40" width="40"></a><a href="http://mc.pp.se/dc/">Dreamcast Programming</a> by <i><a href="mailto:marcus@mc.pp.se">Marcus Comstedt</a></i><br>
+
+<!-- Created: Sun Dec 19 02:36:11 MET 1999 -->
+<!-- hhmts start -->
+Last modified: Sun Apr  9 20:37:38 MEST 2000
+<!-- hhmts end -->
+
+
+</body></html>

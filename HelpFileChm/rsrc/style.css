@@ -1,0 +1,109 @@
+/*
+	CSS pour l'aide
+*/
+
+.shortcut {
+	color: purple;
+	font-style: italic;
+}
+
+.conclusion {
+	font-size: 12px;
+	font-weight: bold;
+	color: #0000FF;
+}
+
+.header {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 18px;
+	background-color: #000099;
+}
+
+.footer {
+	font-size: 9px;
+	font-family: Arial, Tahoma, Verdana, Geneva, Helvetica, sans-serif;
+}
+
+.title {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #0000CC;
+}
+
+.warning {
+	color: red;
+	font-weight: bold;
+}
+
+.menus {
+	color: #CC0000;
+	font-style: italic;
+}
+
+.desc {
+	color: #CC0000;
+	font-weight: bold;
+	/*text-decoration: underline;*/
+}
+
+/* Espace entre chaque élément de liste  */
+li {
+	margin-bottom: 3px;
+}
+
+/* Style des listes (non ordonné) */
+ul {
+	list-style-image: url(../images/puce.gif);
+	list-style-type: circle;
+	margin-bottom: 20px;
+}
+
+a:link {
+	color: #0099FF;
+	text-decoration: underline;
+
+}
+
+a:visited {
+	color: #CC99FF;
+	text-decoration: underline;
+
+}
+
+a:active {
+	color: #FF0000;
+	text-decoration: underline overline;
+}
+
+a:hover {
+	color: #9900CC;
+	text-decoration: underline overline;
+	border: none;
+
+}
+
+body{ 
+	background-image: url(../images/bkgnd.jpg);
+	background-repeat: fixed;
+	background-attachment: fixed;
+	font-family: Tahoma, Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size: 12px;
+	color: black;
+	
+	/* ---{ POUR LA SCROLL BAR !!! }--- */
+	/* la couleur principale (face) */ 
+	scrollbar-face-color:#0000A0;
+	/* la couleur des fleches */ 
+	scrollbar-arrow-color:#FFFFFF;
+	/* la couleur de fond (entre le curseur et la fleche) */ 
+	scrollbar-track-color:#0000A0;
+	/* la couleur claire (haut+gauche) */ 
+	scrollbar-highlight-color:#CCCCCC;
+	/* la couleur claire 2 (haut+gauche) */ 
+	scrollbar-3dlight-color:#FFFFFF;
+	/* la couleur foncee (bas+droite) */ 
+	scrollbar-shadow-color:#000000
+	/* la couleur foncee 2 (bas+droite) */ 
+	scrollbar-darkshadow-color:#999999;
+} 

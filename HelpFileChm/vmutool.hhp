@@ -1,0 +1,28 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=vmutool.chm
+Contents file=Table of Contents.hhc
+Default topic=index.html
+Display compile progress=No
+Language=0x40c Français (France)
+Title=Welcome to the VMU TOOL PC Help File !
+
+
+[FILES]
+legal.html
+1overview.html
+2config.html
+3configview.html
+4tabview.html
+5menus.html
+6pictsops.html
+7invalidfiles.html
+8shell.html
+9console.html
+10crash.html
+about.html
+desc.html
+index.html
+
+[INFOTYPES]
+

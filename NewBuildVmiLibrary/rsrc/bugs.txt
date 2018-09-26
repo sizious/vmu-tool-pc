@@ -1,0 +1,1 @@
+Also, there's a couple bugs that I ran across. When it creates the VMI files, it puts spaces (%20) where there should be NULL (%00). It also doesn't properly calculate checksums.

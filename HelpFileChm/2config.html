@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title>2. Configuration</title>
+	<link rel="stylesheet" type="text/css" href="rsrc/style.css">
+</head>
+<body>
+
+<!-- Titre -->
+<table width="100%" border="1" cellspacing="0">
+  <tr> 
+    <td class="header">2. Configuration</td>
+  </tr>
+</table>
+
+<!-- Le texte commence ici -->
+<p><strong>VMU TOOL PC</strong> is fully configurable, you can personalize it as you wish. To do that, go to the <span class="menus">Config</span> > <span class="menus">Options...</span> .</p>
+
+<p>The following dialog's shown :</p>
+
+<p><span class="title">1) General</span></p>
+
+<div align="center"><img src="screens/options/general.png"></img></div>
+
+<p>As you see, multiples options are showed. Please note you can leave the mouse cursor into a control to see a hint window.</p>
+
+<p><u>Here it's a description of all avialables options :</u></p>
+<ul>
+	<li><span class="desc">Prompt before closing application :</span> When you quit <strong>VMU TOOL PC</strong>, a message is shown, asking you if you are sure to perform this action.</li>
+    <li><span class="desc">Show splash screen :</span> Show the <b>VMU TOOL PC</b> at startup.</li>
+    <li><span class="desc">Save the directory and rescan at start :</span> This option can be very useful but you must use it carefully because it uses lot of RAM when running the application. At startup, the application scans the previous saved folder and display its contents in the view. It can be very slow (and uses that RAM ^^) if you have many files in this saved folder.</li>
+    <li><span class="desc">Shell integration, associate with Dreamcast save files :</span> This option perform a shell integration while associating VMI, VMS and DCI files to <b>VMU TOOL PC</b>.</li>
+</ul>
+
+<p><a name="shell"></a><u>About the shell integration :</u> If you have already an application associated with VMI, VMS and DCI files, the previous association will be saved to the registry. <b>VMU TOOL PC</b> will be associated by default in <i>Windows</i>. If you want to restore the previous associations, just uncheck the box in option menu. <b>You don't need to reboot your PC to apply changes.</b></p>
+
+<p>When you want to associate <b>VMU TOOL PC</b> with extensions, a message ask you if you are sure to do this :</p>
+
+<div align="center"><img src="screens/options/askassc.png"></img></div>
+
+<p>Please answer <span class="menus">Yes</span> (<span class="menus">Oui</span> on this picture) if you are sure to modify the existing default association :</p>
+
+<div align="center"><img src="screens/options/asscok.png"></img></div>
+
+<p>If you uncheck the check box and click OK, you should have this message :</p>
+
+<div align="center"><img src="screens/options/asscno.png"></img></div>
+
+<p>After pushing <span class="menus">OK</span>, your previous associations are restored.</p>
+
+<p><a name="view"></a><span class="title">2) View</span></p>
+
+<div align="center"><img src="screens/options/view.png"></img></div>
+
+<ul>
+	<li><span class="desc">Auto select the first file after scan :</span> This option select the first file in the view after the directory scanning.</li>
+	<li><span class="desc">Auto scroll the view when adding a file :</span>  With that, VMU TOOL PC'll scroll the view when it add a new file. If you don't activate this option, the view still "freezed" to the top.</li>
+    <li><span class="desc">Show errornous VMI files :</span>  Add to the view errornous VMI files, with a blue VMU icon. Generally, theses files aren't associated to any VMS files.</li>
+    <li><span class="desc">Show invalid VMS files :</span>  With this option you can view VMS "alone", without VMI associated. You can create a valid VMI for theses files with the menu item <span class="menus">Create associated VMI</span> avialable in the view or in the File main menu.</li>
+</ul>
+
+<p><span class="title">3) Tray icon</span></p>
+
+<div align="center"><img src="screens/options/tray.png"></img></div>
+
+<ul>
+    <li><span class="desc">Minimize application put in system tray :</span>  When you click on the minimize button on the main window, the application's put in the system tray, at the left of the system clock.</li>
+    <li><span class="desc">Close application put in system tray :</span>  Same thing but when you close the application (the main window). To quit VMU TOOL PC, select File > Exit or click in the tray icon and select Exit.</li>
+    <li><span class="desc">Don't use this option, thanks :</span>  The tray icon is desactivated.</li>
+</ul>
+
+<p><span class="title">4) Debug</span></p>
+
+<div align="center"><img src="screens/options/debug.png"></img></div>
+
+<ul>
+    <li><span class="desc">Log scan directories events :</span> Theses events are added to the debug log when a directory scan begins and ending. It can be disturbing, so if you don't like it, disable it here.</li>
+    <li><span class="desc">Auto scroll log :</span> Scroll down the debug log automatically, the last line was shown all the time.</li>
+    <li><span class="desc">Log state events :</span> Log information events. You can choose the color here.</li>
+    <li><span class="desc">Log success events :</span> Log success events, like "file read success" and more. Select your favorite color here too.</li>
+    <li><span class="desc">Log errors events :</span> All errors are added to the debug log... default color's red. Note, it exists fatal errors, in red/bold. That kind of errors can't be disabled.</li>
+</ul>
+
+<p><a name="hex"></a><span class="title">5) Hex Edition</span></p>
+
+<div align="center"><img src="screens/options/hexedit.png"></img></div>
+
+<p>Hex Edit is a cool option for saves files edition. You can use this in the main view, by right-clicking or in the File menu. Select your favorite hex editor. If your hex editor needs extra parameters enter theses in the edit zone on this window.</p>
+
+<!-- Fin du fichier -->
+<p class="conclusion">That's it !</p>
+<hr>
+<div align="center" class="footer">2002-2006 VMU TOOL PC &copy;reated by <a href="http://sbibuilder.shorturl.com/" target="_blank">[big_fury]SiZiOUS</a> 
+	- VMU TOOL PC Engine created by <a href="http://blueswirl.shorturl.com/" target="_blank">Speud</a> 
+	- Help written by <a href="http://sbibuilder.shorturl.com/" target="_blank">[big_fury]SiZiOUS</a> 
+	- <a href="http://dctop.free.fr/in.php?id=57" target="_blank">La communaut&eacute; fran&ccedil;aise de la Dreamcast</a>
+</div>
+</body>
+</html>
